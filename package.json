@@ -1,6 +1,7 @@
 {
   "name": "blog",
   "version": "1.0.0",
+  "type": "module",
   "description": "This repository contains the source code of my personal blog and professional portfolio.",
   "main": "index.js",
   "scripts": {
