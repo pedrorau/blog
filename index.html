@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedro Rau - Portfolio</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    </script>
+    <script src="./js/theme-switcher.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white">
+    <!-- Hero Section with Image -->
+    <header class="relative w-full h-[250px] bg-gray-800 overflow-hidden">
+      <img
+        src="./images/image.webp"
+        alt="Pedro Rau"
+        class="w-full h-full object-cover object-center"
+      />
+      <!-- Capa oscura para mejorar contraste -->
+      <!--<div class="absolute inset-0 bg-black bg-opacity-40"></div>-->
+    </header>
+
+    <!-- Profile Section -->
+    <div class="max-w-3xl mx-auto px-4 relative pb-12">
+      <div class="text-center">
+        <!-- Profile Image -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 -top-16">
+          <img
+            src="./images/yop.jpeg"
+            alt="Profile"
+            class="rounded-full w-16 h-16 object-cover border-4 border-black"
+          />
+        </div>
+
+        <!-- Name and Title -->
+        <h1 class="text-2xl font-bold mt-2">Pedro Rau</h1>
+        <p class="text-gray-600 text-sm mb-1">A mobile software engineer</p>
+        <p class="text-gray-600 text-sm">
+          Passionate about learning and sharing.
+        </p>
+
+        <!-- Available for hire -->
+        <div class="flex items-center justify-center mt-4 space-x-2">
+          <span class="inline-flex items-center text-xs text-gray-600">
+            <span class="h-2 w-2 rounded-full bg-green-500 mr-1"></span>
+            Available for hire
+          </span>
+          <span class="text-gray-400">•</span>
+          <span class="flex items-center text-xs text-gray-600">
+            <i class="fas fa-map-marker-alt mr-1"></i>
+            Lima, Peru
+          </span>
+          <a
+            href="https://www.linkedin.com/in/praudlacruz/"
+            class="text-gray-600 ml-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://github.com/pedrorau"
+            class="text-gray-600 ml-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://pedrorau.dev/"
+            class="text-gray-600 ml-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fas fa-globe"></i
+          ></a>
+        </div>
+
+        <!-- Contact Buttons -->
+        <div class="flex justify-center mt-4 space-x-3">
+          <button
+            onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+            class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-200 text-sm flex items-center"
+          >
+            <i class="far fa-envelope mr-2"></i> Contact Me
+          </button>
+          <button
+            class="bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition duration-200 text-sm flex items-center"
+          >
+            <a
+              href="https://calendly.com/pedroraudelacruz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="far fa-calendar mr-2"></i> Book a Call
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <!-- Featured Projects Section -->
+      <section class="mt-12">
+        <h2 class="uppercase text-xs text-gray-500 font-medium mb-4">
+          FEATURED PROJECTS
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Project 1 -->
+          <div class="bg-gray-900 text-white rounded-lg overflow-hidden">
+            <img
+              src="/api/placeholder/400/200"
+              alt="Studio18"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Studio18</h3>
+              <p class="text-gray-400 text-xs mb-2">18studio.com →</p>
+              <p class="text-sm text-gray-300">
+                Creative hub for innovative design solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-gray-900 text-white rounded-lg overflow-hidden">
+            <img
+              src="/api/placeholder/400/200"
+              alt="Free Mockups"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Free Mockups</h3>
+              <p class="text-gray-400 text-xs mb-2">idealmockups.com →</p>
+              <p class="text-sm text-gray-300">
+                High-quality templates for designers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="bg-red-700 text-white rounded-lg overflow-hidden">
+            <img
+              src="/api/placeholder/400/200"
+              alt="AI Illustrations"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">AI-Illustrations</h3>
+              <p class="text-gray-200 text-xs mb-2">aiiartspace.com →</p>
+              <p class="text-sm text-gray-100">
+                Unique AI-generated artwork collections.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Writing Section -->
+      <section class="mt-12">
+        <h2 class="uppercase text-xs text-gray-500 font-medium mb-4">
+          WRITING
+        </h2>
+
+        <div class="space-y-6">
+          <!-- Article 1 -->
+          <div class="flex flex-col">
+            <span class="text-xs text-gray-500">24 Dec, 2024</span>
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-medium">
+                  The Evolution of Modern Design Trends
+                </h3>
+                <span class="text-xs text-gray-500">Graphic Design</span>
+              </div>
+              <a href="#" class="text-xs flex items-center text-gray-600"
+                >Read <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="flex flex-col">
+            <span class="text-xs text-gray-500">19 Dec, 2024</span>
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-medium">
+                  <span class="text-gray-400">2.</span> The Power of
+                  Storytelling in Branding
+                </h3>
+                <span class="text-xs text-gray-500">Branding</span>
+              </div>
+              <a href="#" class="text-xs flex items-center text-gray-600"
+                >Read <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="flex flex-col">
+            <span class="text-xs text-gray-500">15 Dec, 2024</span>
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-medium">
+                  Examples of Award-Winning Packaging Designs
+                </h3>
+                <span class="text-xs text-gray-500">Packaging</span>
+              </div>
+              <a href="#" class="text-xs flex items-center text-gray-600"
+                >Read <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Article 4 -->
+          <div class="flex flex-col">
+            <span class="text-xs text-gray-500">12 Dec, 2024</span>
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-medium">
+                  <span class="text-gray-400">4.</span> The Future of Design:
+                  Technology Meets Creativity
+                </h3>
+                <span class="text-xs text-gray-500">Design Theory</span>
+              </div>
+              <a href="#" class="text-xs flex items-center text-gray-600"
+                >Read <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Article 5 -->
+          <div class="flex flex-col">
+            <span class="text-xs text-gray-500">10 Dec, 2024</span>
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-medium">
+                  <span class="text-gray-400">5.</span> Key Principles of
+                  Effective Visual Design
+                </h3>
+                <span class="text-xs text-gray-500">Design Theory</span>
+              </div>
+              <a href="#" class="text-xs flex items-center text-gray-600"
+                >Read <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Article 6 -->
+          <div class="flex flex-col">
+            <span class="text-xs text-gray-500">08 Dec, 2024</span>
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-medium">
+                  Balancing Aesthetics and Practicality in Packaging
+                </h3>
+                <span class="text-xs text-gray-500">Packaging</span>
+              </div>
+              <a href="#" class="text-xs flex items-center text-gray-600"
+                >Read <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 text-center">
+          <button
+            class="bg-gray-100 text-gray-600 px-4 py-2 rounded text-sm hover:bg-gray-200 transition duration-200"
+          >
+            Load More
+          </button>
+        </div>
+      </section>
+
+      <!-- Cases Section -->
+      <section class="mt-12">
+        <h2 class="uppercase text-xs text-gray-500 font-medium mb-4">CASES</h2>
+
+        <!-- Case 1 -->
+        <div class="mb-10">
+          <div class="flex justify-between items-start">
+            <h3 class="font-medium text-lg">Creative Concept for Studio18</h3>
+            <span class="text-sm text-gray-500">2024</span>
+          </div>
+          <p class="text-gray-600 text-sm mt-1 mb-4">
+            Created a unique and successful digital concept that increased brand
+            visibility by 45% and elevated the customer experience.
+          </p>
+
+          <div class="rounded-lg overflow-hidden mb-4">
+            <img
+              src="/api/placeholder/800/400"
+              alt="Creative Concept"
+              class="w-full object-cover"
+            />
+          </div>
+
+          <!-- Testimonial -->
+          <div class="bg-gray-100 p-4 rounded-lg flex items-start">
+            <img
+              src="/api/placeholder/40/40"
+              alt="Client"
+              class="w-10 h-10 rounded-full mr-3"
+            />
+            <div>
+              <p class="text-sm text-gray-600">
+                "It was a pleasure working with Pedro. He is a true professional
+                in his field. Highly recommended!"
+              </p>
+              <p class="text-xs text-gray-500 mt-1">
+                Caroline Stewart, Founder Studio18
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="mb-10">
+          <div class="flex justify-between items-start">
+            <h3 class="font-medium text-lg">
+              Packaging Design for Studio Mako
+            </h3>
+            <span class="text-sm text-gray-500">2024</span>
+          </div>
+          <p class="text-gray-600 text-sm mt-1 mb-4">
+            Redesigned their packaging in a unique way, increasing return sales
+            by 63% and improving user retention significantly.
+          </p>
+
+          <div class="rounded-lg overflow-hidden mb-4">
+            <img
+              src="/api/placeholder/800/400"
+              alt="Packaging Design"
+              class="w-full object-cover"
+            />
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            class="bg-gray-100 text-gray-600 px-4 py-2 rounded text-sm hover:bg-gray-200 transition duration-200"
+          >
+            View All
+          </button>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="mt-12">
+        <div class="flex justify-between items-center">
+          <h2 class="uppercase text-xs text-gray-500 font-medium">
+            EXPERIENCE
+          </h2>
+          <span class="inline-flex items-center text-xs text-gray-600">
+            <span class="h-2 w-2 rounded-full bg-green-500 mr-1"></span>
+            Available for hire
+          </span>
+        </div>
+
+        <div class="mt-4 space-y-6">
+          <!-- Experience 1 -->
+          <div class="flex justify-between">
+            <div>
+              <h3 class="font-medium">Studio18</h3>
+              <p class="text-xs text-gray-500">18studio.com →</p>
+              <p class="text-sm text-gray-600 mt-1">
+                Creating user-friendly websites and improving performance.
+              </p>
+            </div>
+            <div class="text-right text-sm text-gray-500">
+              <span>2022 - Present</span>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="flex justify-between">
+            <div>
+              <h3 class="font-medium">Branding Design</h3>
+              <p class="text-xs text-gray-500">agency.com →</p>
+              <p class="text-sm text-gray-600 mt-1">
+                Supporting campaigns and monitoring analytics for better
+                strategies.
+              </p>
+            </div>
+            <div class="text-right text-sm text-gray-500">
+              <span>2020 - 2022</span>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="flex justify-between">
+            <div>
+              <h3 class="font-medium">Freelance</h3>
+              <p class="text-sm text-gray-600 mt-1">
+                Delivering tailored content success for diverse client needs.
+              </p>
+            </div>
+            <div class="text-right text-sm text-gray-500">
+              <span>2015 - 2020</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="mt-12" id="contact">
+        <h2 class="uppercase text-xs text-gray-500 font-medium mb-4">
+          GET IN TOUCH
+        </h2>
+
+        <div>
+          <h3 class="font-medium text-lg">Feel Free to Contact Me</h3>
+          <p class="text-sm text-gray-600 mt-1 mb-4">
+            I'd love to hear from you! Whether you have questions, feedback, or
+            a project in mind, don't hesitate to reach out.
+          </p>
+
+          <form class="space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="bg-gray-100 border border-gray-200 rounded p-2 text-sm"
+              />
+              <input
+                type="email"
+                placeholder="Your E-mail"
+                class="bg-gray-100 border border-gray-200 rounded p-2 text-sm"
+              />
+            </div>
+            <textarea
+              placeholder="Message"
+              rows="4"
+              class="w-full bg-gray-100 border border-gray-200 rounded p-2 text-sm"
+            ></textarea>
+            <div>
+              <button
+                type="submit"
+                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-200 text-sm"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-16 mb-8 pt-6 border-t border-gray-200">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <img
+              src="./images/yop.jpeg"
+              alt="Profile"
+              class="rounded-full w-8 h-8 object-cover"
+            />
+            <div class="ml-4 flex space-x-4 text-sm text-gray-500">
+              <a href="#" class="hover:text-gray-800">Writing</a>
+              <a href="#" class="hover:text-gray-800">Cases</a>
+              <a href="#" class="hover:text-gray-800">Experiences</a>
+            </div>
+          </div>
+          <!--<div class="flex space-x-2">
+            <a href="#" class="text-gray-400 hover:text-gray-600"
+              ><i class="far fa-moon"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-gray-600"
+              ><i class="fas fa-laptop"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-gray-600"
+              ><i class="fa-regular fa-sun"></i
+            ></a>
+          </div>-->
+          <div class="inline-flex bg-gray-800 rounded-full p-1 space-x-1">
+            <button id="theme-dark" class="w-8 h-8 flex items-center justify-center rounded-full text-gray-400 hover:text-white hover:bg-gray-700 transition-all duration-200">
+              <i class="far fa-moon text-sm"></i>
+            </button>
+            <button id="theme-system" class="w-8 h-8 flex items-center justify-center rounded-full text-white bg-gray-700 transition-all duration-200">
+              <i class="fas fa-laptop text-sm"></i>
+            </button>
+            <button id="theme-light" class="w-8 h-8 flex items-center justify-center rounded-full text-gray-400 hover:text-white hover:bg-gray-700 transition-all duration-200">
+              <i class="fa-regular fa-sun text-sm"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-4 text-xs text-gray-500 flex justify-between">
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-gray-800">Sign up</a>
+            <a href="#" class="hover:text-gray-800">Contact Me</a>
+            <a href="#" class="hover:text-gray-800">Style Guide</a>
+            <a href="#" class="hover:text-gray-800">Categories</a>
+          </div>
+          <p>© 2025 Personal Publishing by Pedro Rau.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
