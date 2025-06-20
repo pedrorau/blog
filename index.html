@@ -19,8 +19,6 @@
         alt="Pedro Rau"
         class="w-full h-full object-cover object-center"
       />
-      <!-- Capa oscura para mejorar contraste -->
-      <!--<div class="absolute inset-0 bg-black bg-opacity-40"></div>-->
     </header>
 
     <!-- Profile Section -->
@@ -31,7 +29,7 @@
           <img
             src="./images/yop.jpeg"
             alt="Profile"
-            class="rounded-full w-16 h-16 object-cover border-4 border-black"
+            class="rounded-full w-16 h-16 object-cover border-4 border-black dark:border-gray-200"
           />
         </div>
 
@@ -414,23 +412,26 @@
             a project in mind, don't hesitate to reach out.
           </p>
 
-          <form class="space-y-4">
+          <form class="space-y-4" data-netlify="true" name="contact">
             <div class="grid grid-cols-2 gap-4">
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
-                class="bg-gray-100 border border-gray-200 rounded p-2 text-sm"
+                class="bg-gray-100 border border-gray-200 rounded p-2 text-sm placeholder-gray-400 dark:placeholder-gray-500"
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Your E-mail"
-                class="bg-gray-100 border border-gray-200 rounded p-2 text-sm"
+                class="bg-gray-100 border border-gray-200 rounded p-2 text-sm placeholder-gray-400 dark:placeholder-gray-500"
               />
             </div>
             <textarea
+              name="message"
               placeholder="Message"
               rows="4"
-              class="w-full bg-gray-100 border border-gray-200 rounded p-2 text-sm"
+              class="w-full bg-gray-100 border border-gray-200 rounded p-2 text-sm placeholder-gray-400 dark:placeholder-gray-500"
             ></textarea>
             <div>
               <button
@@ -473,12 +474,6 @@
         </div>
 
         <div class="mt-4 text-xs text-gray-500 dark:text-gray-200 flex justify-between">
-          <div class="flex space-x-4">
-            <a href="#" class="hover:text-gray-800 dark:text-gray-400">Sign up</a>
-            <a href="#" class="hover:text-gray-800 dark:text-gray-400">Contact Me</a>
-            <a href="#" class="hover:text-gray-800 dark:text-gray-400">Style Guide</a>
-            <a href="#" class="hover:text-gray-800 dark:text-gray-400">Categories</a>
-          </div>
           <p>© 2025 Personal Publishing by Pedro Rau.</p>
         </div>
       </footer>
